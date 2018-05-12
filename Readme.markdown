@@ -1,4 +1,4 @@
-# Python-Vagrant
+# Vagrant-Python
 
 Python-Vagrant provides template for python in vagrant environment.
 
