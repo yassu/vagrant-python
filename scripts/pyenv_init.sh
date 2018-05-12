@@ -5,3 +5,8 @@ cd ~/.pyenv/plugins
 git clone git://github.com/yyuu/pyenv-virtualenv.git
 pyenv install 3.6.3
 pyenv global 3.6.3
+
+pip install --upgrade pip
+if [ -f /vagrant/scripts/requirements.txt ]; then
+  pip install -r /vagrant/scripts/requirements.txt
+fi
