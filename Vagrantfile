@@ -79,6 +79,10 @@ Vagrant.configure("2") do |config|
     :privileged   => true
   config.vm.provision :shell, :path => "./scripts/pyenv_init.sh", \
     :privileged   => false
+  config.vm.provision :shell, :path => "./scripts/root_setting.sh", \
+    :privileged   => true
+  config.vm.provision :shell, :path => "./scripts/user_setting.sh", \
+    :privileged   => false
   # config.vm.provision "shell", inline: <<-SHELL
   #   apt-get update
   #   apt-get install -y apache2
